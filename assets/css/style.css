@@ -1,0 +1,1075 @@
+body {
+  width: 100%;
+}
+header,
+main,
+section {
+  width: 75%;
+  margin: auto;
+}
+header,
+main,
+h2,
+h1,
+h3,
+.note,
+.minInfo,
+nav {
+  font-family: Trip sans;
+}
+
+/* header */
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head2 {
+  display: none;
+  width: 643px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+.head-menu img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.head-logo img {
+  width: 232px;
+  height: 50px;
+  object-fit: cover;
+}
+.head-logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.head-search img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+.logo {
+  display: flex;
+  width: 188px;
+}
+.logo img {
+  width: 192px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 40px;
+}
+.search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.cadre {
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: gray 2px solid;
+  width: 350px;
+}
+input {
+  width: 85%;
+  height: 42px;
+  background-color: transparent;
+  border: none;
+}
+.search img {
+  display: flex;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: text;
+}
+div nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  height: 40px;
+  /* border: black 1px solid; */
+}
+nav:hover:not(:nth-child(4)) {
+  background-color: #ededed;
+  border-radius: 40px;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.navigation img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.navigation button {
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  min-width: 150px;
+  height: 41px;
+}
+
+.navigation {
+  display: flex;
+  width: 450px;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+/* Fin du header */
+/* explorer paris */
+h1 {
+  display: flex;
+  color: #ff5d5d;
+  font-size: 54px;
+  font-weight: 1000;
+  height: 90px;
+  align-items: center;
+}
+h1 span {
+  color: black;
+  font-weight: bold;
+}
+/* main  */
+.nav-cacher {
+  display: none;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: white;
+}
+main > div {
+  display: flex;
+  width: 181px;
+  height: 68px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 15px;
+  padding: 19px;
+  box-sizing: border-box;
+}
+main div span {
+  margin-right: 15px;
+}
+
+main div:hover {
+  filter: invert(100%);
+  background-color: white;
+  cursor: pointer;
+}
+main img {
+  width: 25px;
+  height: 25px;
+}
+
+/* find de main */
+/* trois photo sous main */
+.picture {
+  margin-top: 20px;
+  height: 430px;
+  display: flex;
+  position: relative;
+}
+.picture img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.colone {
+  height: 100%;
+  min-width: 500px;
+  flex: 1;
+  margin-right: 2px;
+}
+.colone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coltwo {
+  height: 100%;
+  width: 480px;
+}
+.coltwo img {
+  height: calc(50% - 1.5px);
+  width: 100%;
+  object-fit: cover;
+}
+/* lien touts les photos */
+.inser-img {
+  width: 130px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  font-size: 12px;
+  font-family: trip sans;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9;
+}
+.inser-img:hover,
+.inser-img img:hover {
+  background-color: #2f2f32;
+}
+.inser-img img {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  filter: invert(100%);
+  background-color: white;
+}
+/* mini info sous les photos */
+.minInfo {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color: grey;
+  margin-top: 26px;
+  margin-bottom: 46px;
+}
+.minInfo span {
+  color: black;
+}
+.minInfo li:hover:not(:last-child) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.minInfo span {
+  text-decoration: underline white;
+}
+/* fin block trois photo sous main */
+/* section div ville lumière */
+.villeLumiere {
+  width: 560px;
+}
+.villeLumiere p:hover {
+  cursor: pointer;
+}
+.villeLumiere h2 {
+  color: black;
+  font-size: 27px;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+.villeLumiere p {
+  color: #2f2f32;
+  font-size: 21px;
+  margin-bottom: 77px;
+}
+/* bloc les immanquables */
+.immanquable {
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 37px;
+}
+/* Fin du bloc les immmaquables */
+/* box se Divertir */
+#boxDivertisement {
+  width: 100%;
+  height: 337px;
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.seDivertir p {
+  margin-bottom: 22px;
+  width: 212px;
+  margin-top: 12px;
+  color: #2f2f32;
+  font-size: 18px;
+}
+#boxDivertisement h2 {
+  font-size: 24px;
+  margin-bottom: 13px;
+  font-weight: bold;
+}
+.seDivertir {
+  width: 292px;
+}
+
+.note button {
+  font-size: 14px;
+  color: #2f2f32;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: white;
+}
+.note button:hover {
+  opacity: 0.8;
+}
+/* box carousel photo */
+.box-caroussel1 {
+  display: flex;
+  width: 849px;
+  flex: 1;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+/* fait disparaitre la bar de scrool */
+::-webkit-scrollbar {
+  display: none;
+}
+.box-caroussel1 div:hover {
+  cursor: pointer;
+}
+.box-caroussel1 div:hover :not(:last-child):not(:first-child) {
+  opacity: 0.8;
+  text-decoration: underline 2px;
+}
+.carousel-Picture1 {
+  width: 274px;
+  height: 380px;
+  position: relative;
+}
+.carousel-Picture1:not(:last-child) {
+  margin-right: 17px;
+}
+.carousel-Picture1 .picture {
+  max-width: 271px;
+  height: 203px;
+  object-fit: cover;
+}
+.carousel-Picture1 h3 {
+  display: flex;
+  font-weight: bold;
+  height: 37px;
+  align-items: center;
+}
+.carousel-Picture1 p {
+  font-family: Trip Sans;
+  height: 17px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2f2f32;
+}
+/* fin des photo du carousel */
+/* debut vignette like du caroussel */
+.carousel-Picture1 .like {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  right: 5px;
+  top: 25px;
+  z-index: 9;
+}
+.like img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+.like:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  /* opacity: 1; */
+}
+/* fin des vignettes like du carouselle */
+/* fleche de navigation du caorusel */
+.fleche1,
+.fleche2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border: 2px black solid;
+}
+.fleche1 img,
+.fleche2 img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.fleche2 {
+  position: absolute;
+  right: -20px;
+  top: 85px;
+  z-index: 9;
+}
+.fleche1 {
+  position: absolute;
+  left: 270px;
+  top: 85px;
+  z-index: 9;
+}
+.fleche1:hover,
+.fleche2:hover {
+  cursor: pointer;
+  filter: invert(100%);
+  background-color: white;
+  border: black;
+}
+/* fin des fleches de navigation du carousel */
+
+/* bandeau des tandances forums */
+.bandeau {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.bandeau h2 {
+  font-size: 24px;
+  font-weight: 900;
+}
+/* fin du bandeau des tendances forums */
+/* contenu des tendances forums */
+.box-tendance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%px;
+  height: 155px;
+  margin-bottom: 86px;
+}
+.tendance-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #faf1ed;
+  width: 370px;
+  height: 155px;
+  border-radius: 15px;
+}
+.tendance-article h2 {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  height: 90px;
+  width: 305px;
+  font-weight: bold;
+}
+.tendance-article h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tendance-article img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 9px;
+}
+.img-photo {
+  display: flex;
+  width: 305px;
+  align-items: center;
+}
+.img-photo p {
+  color: #2f2f32;
+}
+.img-photo span {
+  color: black;
+  cursor: pointer;
+}
+.img-photo :hover {
+  text-decoration: underline;
+}
+/* fin du contenus des tendances */
+
+/*  box logement de location */
+.box-location {
+  height: 600px;
+  font-family: trip sans;
+  position: relative;
+}
+.title-location h2 {
+  height: 60px;
+  font-size: 25px;
+  font-weight: 1000;
+}
+.rubrique-location h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.rubrique-location {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+/* debut du caroussel de location */
+.caroussel-location {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  overflow-x: auto;
+  cursor: pointer;
+}
+.caroussel-location .article-location:not(:last-child) {
+  margin-right: 17px;
+}
+.article-location {
+  min-width: 370px;
+  height: 100%;
+  position: relative;
+}
+.caroussel-location div:hover :not(:last-child):not(:first-child) {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.article-location img {
+  width: 100%;
+  object-fit: cover;
+  height: 275px;
+}
+.article-location h3 {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.article-location p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2f2f32;
+}
+.article-location span {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* immage et div like location  */
+.like-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 9;
+  right: 7px;
+  top: 7px;
+}
+.like-location:hover {
+  background-color: #f2f2f2;
+}
+.like-location img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+/* fin div et img du caorussel */
+/* image et div fleche du caroussel */
+.fleche1-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px black solid;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 9;
+  left: -20px;
+  top: 230px;
+  background-color: white;
+}
+.fleche1-location:hover,
+.fleche2-location:hover {
+  filter: invert(100%);
+  border: white 2px solid;
+}
+.fleche2-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: black 2px solid;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 9;
+  top: 230px;
+  right: -20px;
+  background-color: white;
+}
+.fleche1-location img,
+.fleche2-location img {
+  width: 24px;
+  height: 24px;
+}
+/* fin img et div des fleche du caroussel */
+/* debut box-paris */
+.box-paris {
+  width: 100%;
+  /* height: 509px; */
+  margin-bottom: 85px;
+  font-family: trip sans;
+  position: relative;
+}
+/* .title-box-paris h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 33px;
+} */
+.title-box-paris h3 {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  height: 30px;
+  margin-bottom: 15px;
+}
+/* debut caroussel  paris est genial */
+.caroussel-paris {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.caroussel-paris div:hover :not(:last-child):not(:first-child) {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* debut caroussel paris */
+.caroussel-paris .article-paris:not(:last-child) {
+  margin-right: 17px;
+}
+.caroussel-paris {
+  overflow: hidden;
+  overflow-x: auto;
+  cursor: pointer;
+}
+.article-paris {
+  width: 272px;
+  position: relative;
+}
+.article-paris img {
+  width: 272px;
+  height: 272px;
+}
+.article-paris h3 {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.article-paris p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2f2f32;
+}
+/* fin du caroussel de paris */
+/*like couroussel paris */
+.like-paris {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9;
+  left: 225px;
+  top: 5px;
+}
+.like-paris:hover {
+  background-color: #f2f2f2;
+}
+.like-paris img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+/* fin like caroussel paris */
+/* fleche navigation caroussel paris */
+.box-paris .fleche1-paris {
+  position: absolute;
+  left: -20px;
+  top: 160px;
+}
+.box-paris .fleche2-paris {
+  position: absolute;
+  right: -20px;
+  top: 160px;
+}
+.box-paris .fleche1-paris,
+.box-paris .fleche2-paris {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 9;
+  width: 40px;
+  height: 40px;
+  border: black 2px solid;
+  background-color: white;
+}
+.box-paris .fleche1-paris:hover,
+.box-paris .fleche2-paris:hover {
+  filter: invert(100%);
+  border: 2px white solid;
+}
+.fleche1-paris img,
+.fleche2-paris img {
+  width: 24px;
+  height: 24px;
+}
+/* fin des box de navigation */
+/* fin du box paris */
+/* debut du footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 157px;
+  background-color: #faf1ed;
+}
+/* debut du last block footer */
+.box-last {
+  width: 75%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+}
+/* logo footer */
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #34e0a1;
+}
+.logo-footer img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+/* last 1 */
+
+/* fin last 1 */
+/* last 2 */
+.last1 {
+  display: flex;
+  width: 669px;
+}
+.last1 p {
+  font-size: 15px;
+  color: #2f2f32;
+  /* margin-bottom: 5px; */
+}
+.last1 p span:hover {
+  text-decoration: underline;
+}
+.last-span {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.last-span div {
+  font-size: 17px;
+  font-weight: bold;
+  color: #545454;
+  text-decoration: underline;
+  margin-right: 10px;
+}
+.last-span div:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* fin last 1 */
+/* last 3 */
+.last3 {
+  display: flex;
+  height: 100%;
+  flex: 1;
+}
+.case {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#prix,
+#langue {
+  width: 180px;
+  height: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border: 2px solid #e0e0e0;
+}
+
+#prix,
+#langue :not(:last-child) {
+  margin-right: 10px;
+}
+#prix:hover,
+#langue:hover {
+  background-color: #faf1ed;
+}
+/* fin last 3 */
+/* verison footer */
+.version {
+  width: 75%;
+  margin: auto;
+}
+.version p {
+  width: 711px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #545454;
+  /* margin-top: 5px; */
+}
+.version span {
+  color: black;
+}
+
+/* responsive */
+@media all and (min-width: 801px) and (max-width: 1123px) {
+  body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  header,
+  main,
+  section {
+    width: 95%;
+    margin: auto;
+    /* width: 75%; */
+  }
+  .navigation nav:first-child {
+    margin-left: 15px;
+  }
+  .navigation nav:not(:last-child) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+  .navigation span {
+    display: none;
+  }
+  /* search bar */
+
+  .cadre {
+    width: 191px;
+  }
+  /* main */
+  main {
+    width: 100%;
+    height: 150px;
+    flex-wrap: wrap;
+  }
+
+  .nav-cacher {
+    display: inherit;
+  }
+  /* ville lumiere */
+  .villeLumiere {
+    width: 100%;
+  }
+  /* box tendance */
+  .box-tendance {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+  .box-tendance div:not(:first-child) {
+    margin-left: 10px;
+  }
+  /* footer */
+  footer {
+    /* width: 100%; */
+    height: 225px;
+  }
+  .box-last {
+    flex-direction: column-reverse;
+    width: 95%;
+    margin: auto;
+  }
+  .version {
+    width: 100%;
+  }
+  .case {
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  header,
+  main,
+  section {
+    width: 97%;
+    margin: auto;
+    /* width: 75%; */
+  }
+
+  .search,
+  .navigation,
+  .logo {
+    display: none;
+  }
+  .head2 {
+    display: flex;
+  }
+  .navigation nav:first-child {
+    margin-left: 15px;
+  }
+  .navigation nav:not(:last-child) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+  .navigation span {
+    display: none;
+  }
+  /* search bar */
+
+  .cadre {
+    width: 191px;
+  }
+  /* main */
+  main {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    /* flex-wrap: wrap; */
+    /* position: inherit; */
+  }
+  main > div {
+    display: inherit;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 200px;
+    height: 60px;
+  }
+  .nav-cacher {
+    display: inherit;
+  }
+  /* ville lumiere */
+  .villeLumiere {
+    width: 100%;
+  }
+  /* box tendance */
+  .box-tendance {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+  .box-tendance div:not(:first-child) {
+    margin-left: 10px;
+  }
+  /* footer */
+  footer {
+    /* width: 100%; */
+    height: 425px;
+  }
+  .box-last {
+    flex-direction: column-reverse;
+    width: 435px;
+    height: 230px;
+    margin: auto;
+    align-items: center;
+  }
+  .last1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .version {
+    width: 100%;
+  }
+  .version p {
+    width: 100%;
+    height: 100%;
+    /* margin: auto; */
+  }
+  .case {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  #prix {
+    margin-bottom: 15px;
+  }
+  #prix,
+  #langue {
+    width: 100%;
+  }
+  .coltwo {
+    display: none;
+  }
+
+  .picture {
+    width: 100%;
+    height: 276px;
+  }
+  .inser-img {
+    bottom: 10px;
+  }
+  .seDivertir {
+    display: none;
+  }
+  .carousel-Picture1 {
+    min-width: 354px;
+  }
+  .carousel-Picture1 .picture {
+    min-width: 354px;
+    height: 265px;
+  }
+}
